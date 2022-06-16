@@ -20,14 +20,14 @@
         "@type": "gx-participant:Address",
         "gx-participant:country": {
           "@type": "xsd:string",
-          "@value": "{{ country }}"
+          "@value": "DEU"
         }
       },
       "gx-participant:legalAddress": {
         "@type": "gx-participant:Address",
         "gx-participant:country": {
           "@type": "xsd:string",
-          "@value": "{{ country }}"
+          "@value": "DEU"
         }
       }
     },
