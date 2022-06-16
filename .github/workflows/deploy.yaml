@@ -108,7 +108,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: bscholtes1A/DataDashboard
-          ref: d01280aa973c4799cfd15e7c94ff0f3c1c47789c
+          ref: e2842f1439bdc2cccbc65f5c1d64f0a1b941049b
 
       - name: 'Az CLI login'
         uses: azure/login@v1
@@ -152,7 +152,7 @@ jobs:
           output_file: deployment/terraform/dataspace/SignedWrappedParticipantSelfDescription.json
           strict: true
           variables: |
-            registrationNumber=A999999
+            registrationNumber=DEANY1234NUMBER
             country=NL
 
 # TODO: Hackathon #4: sign self-description with compliance API
