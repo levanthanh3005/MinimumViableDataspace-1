@@ -42,6 +42,7 @@ Follow the instructions to [Configure a federated identity credential]([Configur
 Follow the instructions to [Configure a federated identity credential](https://docs.microsoft.com/azure/active-directory/develop/workload-identity-federation-create-trust-github?tabs=azure-portal#configure-a-federated-identity-credential) for Pull requests.
 
 Configure the following GitHub secrets:
+
 - For **Entity Type**, select **Pull Request**.
 - For **Name**, type any name.
 
@@ -91,15 +92,6 @@ Configure the following GitHub secrets:
 | `TERRAFORM_STATE_STORAGE_ACCOUNT` | The name of the storage account used to store the Terraform state container. |
 | `TERRAFORM_STATE_CONTAINER` | The name of the container used to store the Terraform state blob. |
 
-Update the value of the `CD_RESOURCES_PREFIX` env in the [cd.yaml](../../.github/workflows/cd.yaml) file.
-This prefix should help have unique resource names across fork repositories when running CD workflow.
-
 ### Deploying CD resources
 
 Manually run the `Initialize CD` GitHub Actions workflow.
-
-### Deploying Data Dashboard
-
-Fork the **EDC Data Dashboard** web app and run its deploy action.
-
-Adapt the default value of the Data Dashboard image tag (`data_dashboard_image_tag` variable) in the [Terraform variables](deployment/terraform/variables.tf) to reflect the tag of the **EDC Data Dashboard** web app deployment.
